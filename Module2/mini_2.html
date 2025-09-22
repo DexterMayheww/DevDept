@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Feedback Survey</title>
+    </head>
+    <body>
+
+        <h1>CodeMug Smart Coffee Cup - Feedback Form</h1>
+        <p>Thank you for helping us improve our product!</p>
+
+        <form>
+            <!-- Text Inputs -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email">
+            <br><br>
+
+            <!-- Radio Buttons -->
+            <p>How often do you use your CodeMug?</p>
+            <input type="radio" id="daily" name="usage_frequency" value="daily">
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="weekly" name="usage_frequency" value="weekly">
+            <label for="weekly">A few times a week</label><br>
+            <input type="radio" id="monthly" name="usage_frequency" value="monthly">
+            <label for="monthly">A few times a month</label><br><br>
+
+            <!-- Checkboxes -->
+            <p>Which features do you use most? (Check all that apply)</p>
+            <input type="checkbox" id="temp_control" name="features" value="temp_control">
+            <label for="temp_control">Temperature Control</label><br>
+            <input type="checkbox" id="mobile_app" name="features" value="mobile_app">
+            <label for="mobile_app">Mobile App Integration</label><br>
+            <input type="checkbox" id="led_display" name="features" value="led_display">
+            <label for="led_display">LED Display</label><br><br>
+            
+            <!-- Dropdown Menu -->
+            <label for="satisfaction">Overall, how satisfied are you with the CodeMug?</label><br>
+            <select id="satisfaction" name="satisfaction_level">
+                <option value="very_satisfied">Very Satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="unsatisfied">Unsatisfied</option>
+            </select>
+            <br><br>
+
+            <!-- Text Area -->
+            <label for="comments">Do you have any suggestions for improvement?</label><br>
+            <textarea id="comments" name="user_comments" rows="5" cols="40"></textarea>
+            <br><br>
+
+            <!-- Submission Button -->
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+    </body>
+</html>
