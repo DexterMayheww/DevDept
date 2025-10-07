@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechView</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            background-color: #ece6d9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .logo-name {
+            font-family: 'Trebuchet MS';
+        }
+        .logo {
+            width: 30px;
+        }
+        .hero {
+            background-color: #042729;
+            display: flex;
+            align-items: center;
+            padding: 50px 300px;
+        }
+        .hero-text {
+            width: 70%;
+            padding: 10px;
+            color: white;
+        }
+        .free {
+            background-color: #3d3d36;
+            width: fit-content;
+            padding: 3px 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .hero-header {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero-para {
+            font-size: 1.35rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #FF4800;
+            color: white;
+            padding: 20px 30px;
+            font-size: 1.35rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .hero-image {
+            width: 30%;
+            height: fit-content;
+        }
+        .sections {
+            padding: 50px 300px;
+            background-color: #ece6d9;
+            display: flex;
+        }
+        .section {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 30px 50px;
+            width: 300px;
+            margin: 0 50px;
+            font-size: 1.35rem;
+        }
+        .important {
+            background-color: #ece6d9;
+            padding: 30px 300px;
+            display: flex;
+        }
+        .imp-text {
+            width: 50%;
+            padding: 30px;
+        }
+        .imp-header {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+        .imp-para {
+            font-size: 1.25rem;
+            font-weight: 100;
+            margin-bottom: 30px;
+        }
+        .imp-img {
+            border: 1px solid black;
+            padding: 30px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+        }
+        .chip-img {
+            height: 350px;
+        }
+        .notice {
+            background-color: #042729;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .notice-header {
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+        .copyright {
+            background-color: #ece6d9;
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 680px) {
+            .hero {
+                padding: 30px;
+            }
+            .hero-text {
+                padding: 20px;
+            }
+            .hero-header {
+                font-size: 2rem;
+            }
+            .hero-para {
+                font-size: 1rem;
+            }
+            .sections {
+                padding: 30px;
+            }
+            .section {
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin: 0 20px;
+            }
+            .important {
+                padding: 30px;
+            }
+            .imp-header {
+                font-size: 1.25rem;
+            }
+            .imp-para {
+                font-size: 0.9rem;
+            }
+            .chip-img {
+                height: 150px;
+            }
+            .notice-header {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo-name">TechView</h1>
+        <img src="https://img.icons8.com/?size=100&id=9078&format=png&color=FF4800" alt="Logo" class="logo">
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <p class="free">Free Resource</p>
+                <h2 class="hero-header">25 Tech & Entreprenurial Ideas for Beginners</h2>
+                <p class="hero-para">25 complete, step-by-step Tech projects to help you build a technological portfolio.</p>
+                <button class="btn">Access Now</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="laptop" class="hero-image">
+        </div>
+        <div class="sections">
+            <div class="section">Quick reference for technological news</div>
+            <div class="section">Common color codes and fonts</div>
+            <div class="section">Project files and templates</div>
+        </div>
+        <div class="important">
+            <div class="imp-text">
+                <h3 class="imp-header">Level up your technological skills.</h3>
+                <p class="imp-para">Ready to transform your entrepreneurial journey from aspiring founder to confident innovator? This hands-on guide delivers exactly what you need: a series of practical, step-by-step technology and entrepreneurship projects designed to build your skills from the ground up.</p>
+                <p class="imp-para">Perfect for aspiring entrepreneurs and beginners in the tech industry, this comprehensive collection walks you through essential projects. You'll learn how to develop a Minimum Viable Product (MVP), create a solid business plan, and pitch your ideas to investors. Each project reinforces core concepts while teaching you real-world applications of technology and business strategy.</p>
+                <p class="imp-para">Don't just learn theory—build a portfolio of viable business concepts that demonstrate your skills to potential investors and partners. Plus, get access to a handy quick reference guide covering essential business models, funding options, and key technology terms to speed up your development process.</p>
+                <button class="btn">Grab Yours Today</button>
+            </div>
+            <div class="imp-img">
+                <img src="https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="processor" class="chip-img">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="notice">
+            <h3 class="notice-header">25 Tech & Entreprenurial Ideas for Beginners</h3>
+            <button class="btn">Free Access</button>
+        </div>
+        <div class="copyright">&copy;2025 DevDepartment All Rights Reserved</div>
+    </footer>
+</body>
+</html>
