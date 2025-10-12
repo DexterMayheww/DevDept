@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Art Institute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f3f3f1;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* --- Navigation Bar --- */
+        .main-nav {
+            width: 1200px;
+            margin: 0 auto;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #d1d1d1;
+        }
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            color: #c8504a; /* Terracotta Red */
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            font-size: 14px;
+            color: #555;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #c8504a;
+        }
+        
+        /* --- Hero Section --- */
+        .hero {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            width: 500px;
+        }
+        .hero-text h1 {
+            font-family: 'Georgia', serif;
+            font-size: 64px;
+            color: #555;
+            margin: 0;
+        }
+        .hero-text .highlight {
+            color: #c8504a;
+        }
+        .hero-cta {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            border-bottom: 1px solid #d1d1d1;
+            padding-bottom: 10px;
+            width: 200px;
+        }
+        .hero-cta p {
+            font-size: 14px;
+            color: #777;
+            margin: 0;
+        }
+        .cta-arrow-box {
+            width: 40px;
+            height: 40px;
+            background-color: #c8504a;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-visual {
+            width: 600px;
+            height: 450px;
+        }
+
+        .hero-visual img {
+            border-radius: 30px;
+        }
+        
+        .values-section {
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .value {
+            border-radius: 20px;
+        }
+        .value-1 {
+            background-image: url('https://picsum.photos/id/641/350');
+        }
+        .value-2 {
+            background-image: url('https://picsum.photos/id/372/350');
+        }
+        .value-3 {
+            background-image: url('https://picsum.photos/id/451/350');
+        }
+        .value-item {
+            width: 350px;
+            height: 250px;
+            padding: 20px;
+            backdrop-filter: blur(3px);
+            border-radius: 20px;
+            background-color: #68686888;
+        }
+        .value-item h3 {
+            font-family: 'Georgia', serif;
+            font-size: 24px;
+            color: #f58c87;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .value-item p {
+            font-size: 16px;
+            color: #f0f0f0;
+        }
+        .about-section {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-visual {
+            width: 500px;
+            height: 500px;
+            background-color: #e0e0dc;
+            background-image: url('https://picsum.photos/id/392/500');
+            display: flex;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-title {
+            font-family: 'Georgia', serif;
+            font-size: 60px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            backdrop-filter: blur(4px);
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .about-title .highlight-us {
+            font-size: 40px;
+            color: #d18c88;
+        }
+        .about-text {
+            width: 550px;
+        }
+        .about-text p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .about-text .separator {
+            height: 1px;
+            width: 400px;
+            background-color: #d1d1d1;
+            margin: 80px 0;
+        }
+        footer {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid lightgray;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <p class="logo"><b>MAI.</b></p>
+            <div class="nav-links">
+                <a href="">ABOUT US</a><a href="">VALUES</a><a href="">PROGRAMS</a><a href="">STUDENTS</a><a href="">EVENTS</a><a href="">FAQ</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Unlock Your Artistic Potential at <span class="highlight">Modern Art Institute.</span></h1>
+                <div class="hero-cta">
+                    <p>Enroll in one click</p>
+                    <div class="cta-arrow-box">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://picsum.photos/id/294/600/450" alt="">
+            </div>
+        </div>
+        <section class="values-section">
+            <div class="value value-1">
+                <div class="value-item">
+                    <h3>Foster Creativity</h3>
+                    <p>We provide a fertile ground for ideas to blossom, encouraging experimentation and innovation.</p>
+                </div>
+            </div>
+            <div class="value value-2">
+                <div class="value-item">
+                    <h3>Embrace Diversity</h3>
+                    <p>Our community is a mosaic of cultures and perspectives, enriching the creative dialogue.</p>
+                </div>
+            </div>
+            <div class="value value-3">
+                <div class="value-item">
+                    <h3>Pursue Mastery</h3>
+                    <p>We are dedicated to the rigorous development of technical skill and conceptual depth.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-visual">
+                <h2 class="about-title">About<br><span class="highlight-us">us</span></h2>
+            </div>
+            <div class="about-text">
+                <p>Founded in 1985, the Modern Art Institute has a storied history of championing modern art education. Our journey began with a vision to bridge the gap between tradition and innovation in the art world.</p>
+                <div class="separator"></div>
+                <p>Over the years, we have remained committed to our mission: to empower individuals with the knowledge, skills, and inspiration needed to thrive in the dynamic world of modern art, fostering creativity, critical thinking, and cultural enrichment.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; All Rights Reserved 2025 DevDept
+    </footer>
+</body>
+</html>

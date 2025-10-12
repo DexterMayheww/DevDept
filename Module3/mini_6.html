@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .split-screen-container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .content-pane {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        .image-pane {
+            width: 50%;
+            background-color: #dbeafe; /* A soft blue */
+        }
+
+        .content-wrapper {
+            width: 400px;
+        }
+
+        .content-wrapper h2 {
+            font-size: 36px;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .content-wrapper p {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .image-pane {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="split-screen-container">
+        <div class="content-pane">
+            <div class="content-wrapper">
+                <h2>Design at the Speed of Thought</h2>
+                <p>Our innovative platform gives you the tools to create, iterate, and deploy beautiful designs faster than ever before.</p>
+                <div class="cta-button">Start Designing</div>
+            </div>
+        </div>
+        <div class="image-pane">
+            <img src="https://picsum.photos/id/201/500" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
