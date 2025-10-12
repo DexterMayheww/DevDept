@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+            height: 97vh;
+            font-size: 2rem;
+        }
+        .btn-group {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            background-color: bisque;
+            margin-top: 20px;
+            font-size: 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #display {
+            background-color: bisque;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 40%;
+            height: 30%;
+            padding: 20px;
+            margin: 20px;
+        }
+        .text {
+            display: flex;
+        }
+        .static {
+            width: 50%;
+        }
+        .edit {
+            margin-left: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            margin: 10px;
+        }
+        @media screen and (max-width: 640px) {
+            p {
+                font-size: 1.5rem;
+            }
+            #display {
+                width: 80%;
+            }
+            .static {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h2>Choose one</h2>
+    <div class="btn-group">
+        <button id="rock" onclick="userRock()"><img src="https://img.icons8.com/?size=100&id=9FSQ5judlnAN&format=png&color=000000" alt="stone"></button>
+        <button id="paper" onclick="userPaper()"><img src="https://img.icons8.com/?size=100&id=iyojsvSTyosf&format=png&color=000000" alt="paper"></button>
+        <button id="scissor" onclick="userScissor()"><img src="https://img.icons8.com/?size=100&id=KJOgCX9b9wvq&format=png&color=000000" alt="scissor"></button>
+    </div>
+    <div id="display">
+        <div class="text"><p class="static">The winner is </p><p class="edit" id="winner"></p></div>
+        <div class="text"><p class="static">Your Score: </p><p class="edit" id="user-score">0</p></div>
+        <div class="text"><p class="static">Computer Score: </p><p class="edit" id="comp-score">0</p></div>
+        <div class="text"><p class="static">Tie: </p><p class="edit" id="tie-score">0</p></div>
+    </div>
+    <script>
+        const rock = document.getElementById('rock');
+        const paper = document.getElementById('paper');
+        const scissor = document.getElementById('scissor');
+        const winner = document.getElementById('winner');
+        const userScore = document.getElementById('user-score');
+        const compScore = document.getElementById('comp-score');
+        const tieScore = document.getElementById('tie-score');
+        
+        let userWin = 0;
+        let compWin = 0;
+        let tie = 0;
+        
+        const userRock = () => {
+            if(Math.floor(Math.random() * 3 + 1) === 1) {
+                winner.textContent = 'Tie';
+                tie += 1;
+                tieScore.textContent = tie;
+            }
+            else if(Math.floor(Math.random() * 3 + 1) === 2) {
+                winner.textContent =  'Computer!';
+                compWin += 1;
+                compScore.textContent = compWin;
+            }
+            else if(Math.floor(Math.random() * 3 + 1) === 3) {
+                winner.textContent = 'You!';
+                userWin += 1;
+                userScore.textContent = userWin;
+            }
+        }
+
+
+        const userPaper = () => {
+            if(Math.floor((Math.random() * 100) % 3 + 1) === 1) {
+                winner.textContent = 'You!';
+                userWin += 1;
+                userScore.textContent = userWin;
+            }
+            else if(Math.floor((Math.random() * 100) % 3 + 1) === 2) {
+                winner.textContent = 'Tie';
+                tie += 1;
+                tieScore.textContent = tie;
+
+            }
+            else if(Math.floor((Math.random() * 100) % 3 + 1) === 3) {
+                winner.textContent =  'Computer!';
+                compWin += 1;
+                compScore.textContent = compWin;
+            }
+        }
+
+
+        const userScissor = () => {
+            if(Math.floor((Math.random() * 100) % 3 + 1) === 1) {
+                winner.textContent =  'Computer!';
+                compWin += 1;
+                compScore.textContent = compWin;
+            }
+            else if(Math.floor((Math.random() * 100) % 3 + 1) === 2) {
+                winner.textContent = 'You!';
+                userWin += 1;
+                userScore.textContent = userWin;
+            }
+            else if(Math.floor((Math.random() * 100) % 3 + 1) === 3) {
+                winner.textContent = 'Tie';
+                tie += 1;
+                tieScore.textContent = tie;
+            }
+        }
+    </script>
+</body>
+</html>

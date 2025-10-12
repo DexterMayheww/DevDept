@@ -8,25 +8,17 @@
 <body>
     <center><h1>This is a tip calculator</h1></center>
     <script>
-        // let a=prompt("Enter amount:");
-        // let am=Number(a); 
-        // Number() is used to convert value to a number
-       
-        // let t=prompt("Enter tip:");
-        // let ti=Number(t);
         let a=parseInt(prompt("Enter amount:"));
         document.write("Amount is ",a);
         let t=parseFloat(prompt("Enter tip percentage:"));
         document.write("<br>Tip is ",t)
         if(!isNaN(a)&&!isNaN(t)){
             let calc= t/100 *a;
-            document.write("<br>The taotal amount after tip is: ", a+calc);
+            document.write("<br>The total amount after tip is: ", a+calc);
         }
         else{
             document.write("<br>The input is not a number. Please enter a valid number.")
         }
-        
-        
     </script>
 </body>
 </html>
